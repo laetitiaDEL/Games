@@ -1,0 +1,123 @@
+:root {
+    --bg-tile: #cdc1b4;
+    --bg-tile-2: #eee4da;
+    --bg-tile-4: #ede0c8;
+    --bg-tile-8: #f2b179;
+    --bg-tile-16: #f59563;
+    --bg-tile-32: #f67c5f;
+    --bg-tile-64: ##f65e3b;
+    --bg-tile-128: #edcf72;
+    --bg-tile-256: #edcc61;
+    --bg-tile-512: #edc850;
+    --bg-tile-1024: #edc53f;
+    --bg-tile-2048: #edc22e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #776e65;
+}
+
+.score-container {
+    font-size: 24px;
+    color: #776e65;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    width: 450px;
+    height: 450px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-tile);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #776e65;
+    border-radius: 5px;
+}
+
+.tile-2 {
+    background-color: var(--bg-tile-2);
+}
+
+.tile-4 {
+    background-color: var(--bg-tile-4);
+}
+
+.tile-8 {
+    background-color: var(--bg-tile-8);
+}
+
+.tile-16 {
+    background-color: var(--bg-tile-16);
+}
+
+.tile-32 {
+    background-color: var(--bg-tile-32);
+}
+
+.tile-64 {
+    background-color: var(--bg-tile-64);
+}
+
+.tile-128 {
+    background-color: var(--bg-tile-128);
+}
+
+.tile-256 {
+    background-color: var(--bg-tile-256);
+}
+
+.tile-512 {
+    background-color: var(--bg-tile-512);
+}
+
+.tile-1024 {
+    background-color: var(--bg-tile-1024);
+}
+
+.tile-2048 {
+    background-color: var(--bg-tile-2048);
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #f9f6f2;
+    background-color: #8f7a66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #9c8a77;
+}

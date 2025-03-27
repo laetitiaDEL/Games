@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.card {
+    width: 440px;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #000;
+}
+
+.score-container {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e81111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.card {
+    width: 360px;
+}
+
+#board {
+    width: 320px;
+    margin: 20px;
+}
+
+.cell {
+    height: 100px;
+    border: 1px solid #333; /* Ajouter une bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-sizing: border-box; /* Inclure les bordures dans la taille totale */
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none; /* Supprimer la bordure supérieure pour la première rangée */
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none; /* Supprimer la bordure gauche pour la première colonne */
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none; /* Supprimer la bordure droite pour la dernière colonne */
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none; /* Supprimer la bordure inférieure pour la dernière rangée */
+}
+
+.cell.X {
+    color: #ff4444;
+}
+
+.cell.O {
+    color: #4444ff;
+}
+
+#status {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center mx-auto">
+        <h1>Snake Game</h1>
+        <div class="card mx-auto shadow mb-5 mt-5 rounded"></div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="score-container">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+            <button type="button" id="restart" class="btn btn-primary btn-lg mt-3">Restart</button>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="gameOverModal" tabindex="-1" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameOverModalLabel">Game Over</h5>
+                </div>
+                <div class="modal-body">
+                    Your score: <span id="finalScore"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
